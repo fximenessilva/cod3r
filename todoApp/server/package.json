@@ -6,7 +6,8 @@
   "scripts": {
     "start": "DEBUG=app nodemon index.js",
     "debug": "node --inspect-brk index.js --runInBand",
-    "test": "jest --collect-coverage --watchAll"
+    "test": "jest --collect-coverage --watchAll",
+    "production": "pm2 start index.js --name todo-app"
   },
   "keywords": [],
   "author": "",

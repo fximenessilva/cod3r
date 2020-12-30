@@ -16,3 +16,5 @@ app.use(morgan('tiny'));
 app.listen(port, () => {
   debug(`Server is running on port ${chalk.blue(port)}`);
 });
+
+module.exports = app;
