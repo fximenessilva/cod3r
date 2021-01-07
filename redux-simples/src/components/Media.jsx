@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
@@ -8,9 +9,10 @@ export default (props) => (
     <div>
       <span>
         <span>Resultado: </span>
-        <strong>5</strong>
+        <strong>{1}</strong>
 
       </span>
     </div>
   </Card>
+
 );
