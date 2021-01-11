@@ -24,8 +24,8 @@ function Sorteio(props) {
 
 function mapStateToProps(state) {
   return {
-    min: state.numeros.min,
-    max: state.numeros.max,
+    min: state.numbersReducer.min,
+    max: state.numbersReducer.max,
 
   };
 }

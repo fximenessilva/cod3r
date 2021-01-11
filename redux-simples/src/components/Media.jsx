@@ -24,9 +24,9 @@ const Media = (props) => {
 
 function mapStateToProps(state) {
   return {
-    min: state.numeros.min,
-    max: state.numeros.max,
-    primeiroNome: state.nomes[0],
+    min: state.numbersReducer.min,
+    max: state.numbersReducer.max,
+
   };
 }
 
