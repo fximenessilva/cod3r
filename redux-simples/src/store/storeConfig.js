@@ -1,15 +1,22 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import { createStore, combineReducers } from 'redux';
+import actionTypes from './actions/actionTypes';
 
 const reducers = combineReducers({
   numeros(state, action) {
-    console.log('Reducer Numeros...');
-    console.log(state, ' ', action);
-    return {
-      min: 7,
-      max: 31,
-    };
+    switch (action.type) {
+      case actionTypes.NUM_MIN_ALTERADO:
+        return { ...state, min: action.payload };
+      case actionTypes.NUM_MAX_ALTERADO:
+        return { ...state, max: action.payload };
+
+      default:
+        return {
+          min: 7,
+          max: 33,
+        };
+    }
   },
   nomes(state, action) {
     console.log('Reducer Nomes...');
